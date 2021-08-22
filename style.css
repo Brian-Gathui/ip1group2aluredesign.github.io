@@ -1,0 +1,800 @@
+/*  */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: inherit;
+  background-color: black;
+}
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  color: white;
+}
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 50px;
+}
+h3 {
+  font-weight: 500;
+  font-size: 40px;
+}
+h4 {
+  font-weight: 500;
+  font-size: 30px;
+}
+p {
+  font-weight: 400;
+  font-weight: 20px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  font-weight: 400;
+  list-style: none;
+}
+/* GENERAL WEBPAGE STYLING END */
+
+.bold {
+  font-weight: bold;
+} /* NAVICATION/HERO SECTION */
+.header {
+  height: 100vh;
+  width: 100%;
+  padding: 0 8%;
+  position: relative;
+}
+
+/* Background Video Styling */
+.back-video {
+  margin-top: 1000px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* Background Video Overlay Styling */
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: linear-gradient(#d00d2d, 25%, #002e6c);
+  opacity: 0.5;
+}
+
+/* Navigation styling */
+.logo {
+  width: 110px;
+  background-color: transparent;
+  z-index: 3;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  z-index: 3;
+}
+.navlinks {
+  padding: 50px;
+  background-color: transparent;
+  z-index: 3;
+}
+.navlinks li {
+  display: inline-block;
+  margin: 0 10px;
+  background-color: transparent;
+  z-index: 3;
+}
+.link {
+  padding: 5px 0;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2.5px;
+  background: white;
+  transition: width 0.3s;
+  margin: auto;
+  margin-top: 5px;
+}
+.link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.btn {
+  width: 160px;
+  height: 40px;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: none;
+  background: #d00d2d;
+  color: #ffff;
+  overflow: hidden;
+}
+/* Hover for btn */
+.btn:hover {
+  background: #002e6c;
+  text-decoration: none;
+  color: #fff;
+}
+.btn:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #ff889c;
+  animation: btn 7s ease-in-out infinite;
+}
+.btn:hover {
+  background: #002e6c;
+}
+.btn:active {
+  top: 2px;
+}
+@keyframes btn {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  70% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+/* Hero Section Content Styling */
+.hero-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60%;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 50px;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.hero-content h1 {
+  background-color: transparent;
+}
+.hero-content p {
+  margin-top: 30px;
+  background-color: transparent;
+  text-align: center;
+}
+.hero-content p i {
+  background-color: transparent;
+}
+.btn-cta-hero {
+  margin-top: 30px;
+  background-color: transparent;
+}
+/* NAVIGATION/HERO SECTION END */
+
+/* Styling for the  the class row in the HEADER SECTION */
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  flex-basis: 50%;
+  width: 85%;
+}
+
+/* TAUGHT BY STYLING*/
+.small-container p {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  margin-bottom: 70px;
+  margin-top: 80px;
+}
+
+.col-3 {
+  width: 130px;
+}
+/* Hover effect for the logo icons */
+.col-3 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.col-3 img:hover {
+  filter: grayscale(0%);
+}
+/* TAUGHT BY STYLING END*/
+
+/* SCROLLDOWN 1 DIVIDER */
+.scrolldown-divider {
+  height: 300px;
+  margin-top: 250px;
+}
+.scrolldown {
+  width: 1px;
+  height: 200px;
+  position: relative;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.scrolldown .line {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0) 50%);
+  background-position: 0 -60px;
+  background-size: 100% 200%;
+  animation: scrolldown 5s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+}
+@keyframes scrolldown {
+  0% {
+    background-position: 0 -200px;
+  }
+  75% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 200px;
+  }
+}
+/* SCROLLDOWN 1 DIVIDER END */
+
+/* CULTIVATING CHANGE MAKERS SECTION */
+.cultivating {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-top: 200px;
+  max-width: 900px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 150px;
+}
+.cultivating p {
+  margin-top: 30px;
+}
+/* CULTIVATING CHANGE MAKERS SECTION END */
+
+/* SCROLLDOWN 2  DIVIDER */
+.scrolldown-divider2 {
+  height: 300px;
+}
+.scrolldown2 {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.scrolldown2 .line2 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0) 50%);
+  background-position: 0 -60px;
+  background-size: 100% 200%;
+  animation: scrolldown 5s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+}
+
+@keyframes scrolldown2 {
+  0% {
+    background-position: 0 -200px;
+  }
+  75% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 200px;
+  }
+}
+/* SCROLLDOWN 2 DIVIDER END */
+
+/* OUR VISIONS SECTION */
+.bsc_business {
+  width: 1200px;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 400px;
+  margin-top: 300px
+}
+.bsc_business_image {
+  width: auto;
+  float: right;
+}
+.bsc_business_wrapper img {
+  max-width: 100%;
+  height: 600px;
+  border-radius: 5px;
+}
+/* Hover effect for topics-image*/
+.bsc_business_image {
+  filter: grayscale(0) blur(0);
+  transition: 0.3s ease-in-out;
+}
+.bsc_business_image:hover {
+  filter: grayscale(100%)
+}
+.bsc_business_content {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-right: 70px;
+  margin-top: 15%;
+}
+.bsc_business_content p{
+  margin-top: 50px;
+}
+.bsc_business_content2 {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-right: 70px;
+  margin-top: 8%;
+}
+.bsc_business_content2 p{
+  margin-top: 50px;
+}
+/* OUR VISION SECTION END */
+
+
+/* OUR NEAR FUTURE SECTION */
+.bsc_social {
+  width: 1250px;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 400px;
+  margin-top: 300px
+}
+.bsc_social_image {
+  width: 50%;
+  float: right;
+}
+.bsc_social_wrapper img {
+  max-width: 100%;
+  height: 500px;
+  border-radius: 5px;
+}
+/* Hover effect for topics-image*/
+.bsc_social_image {
+  filter: grayscale(0) blur(0);
+  transition: 0.3s ease-in-out;
+}
+.bsc_social_image:hover {
+  filter: grayscale(100%)
+}
+.bsc_social_content {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-right: 60px;
+  margin-top: 13%;
+}
+.bsc_social_content p{
+  margin-top: 50px;
+}
+/* OUR NEAR FUTURE SECTION END */
+
+/* FRED SWANIKER SECTION */
+iframe{
+  margin-top: 100px;
+  margin-bottom: 500px;
+}
+/* FRED SWANIKER SECTION END */
+
+
+
+/* CULTIVATING CHANGE MAKERS SECTION */
+.fred {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-top: 700px;
+  max-width: 900px;
+  height: 750px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 150px;
+}
+/* CULTIVATING CHANGE MAKERS SECTION END */
+
+/* DEGREE PATHS SECTION 1 TITLE */
+.degree-section-title-1{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-top: 400px;
+  max-width: 900px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* DEGREE PATHS SECTION 1 TITLE END */
+
+
+/* DEGREE PATHS SECTION 1 CONTENT */
+.paths {
+  width: 1200px;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 500px;
+}
+.paths-image {
+  width: auto;
+  float: right;
+}
+.paths-wrapper img {
+  max-width: 100%;
+  height: 600px;
+  border-radius: 5px;
+}
+/* Hover effect for topics-image*/
+.paths-image {
+  filter: grayscale(0) blur(0);
+  transition: 0.3s ease-in-out;
+}
+.paths-image:hover {
+  filter: grayscale(100%)
+}
+.paths-content {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-right: 70px;
+  margin-top: 70px;
+}
+.paths-content p{
+  margin-top: 50px;
+}
+
+.btn-paths1 {
+  width: 230px;
+  height: 40px;
+  margin-top: 40px;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: none;
+  background: #d00d2d;
+  color: #ffff;
+  overflow: hidden;
+}
+/* Hover for btn */
+.btn-paths1:hover {
+  background: #002e6c;
+  text-decoration: none;
+  color: #fff;
+}
+.btn-paths1:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #ff889c;
+  animation: btn-paths1 7s ease-in-out infinite;
+}
+.btn-paths:hover {
+  background: #002e6c;
+}
+.btn-paths:active {
+  top: 2px;
+}
+@keyframes btn-paths1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  70% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+/* DEGREE PATHS SECTION 1 CONTENT END*/
+
+
+/* CULTIVATING CHANGE MAKERS SECTION */
+.pride {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-top: 300px;
+  max-width: 1300px;
+  height: 750px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 150px;
+}
+.pride h1{
+  margin-top:100px;
+}
+.pridemonth{
+  margin-top: 50px;
+  width: 1200px;
+}
+.colorfest{
+  margin-top: 50px;
+  width:800px;
+}
+.eventpictures{
+  margin-top: 50px;
+  width:1000px
+}
+/* CULTIVATING CHANGE MAKERS SECTION END */
+
+
+/* CALL TO ACTION */
+.call-to-action {
+  color: white;
+  padding: 150px 0;
+  text-align: center;
+  margin-top: 3700px;
+}
+.cta-wrapper {
+  background:#333333;
+  height: 700px;
+}
+.cta__inner{
+  background:#333333;
+}
+.cta__title {
+  background:#333333;
+  padding-top: 25px;
+  color: white;
+}
+.cta__sub {
+  background:#333333;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.cta__sub-center {
+  text-align: center;
+  color: white;
+}
+.btn-cta {
+  width: 180px;
+  height: 40px;
+  margin-top: 20px;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: none;
+  background: #d00d2d;
+  color: #ffff;
+  overflow: hidden;
+}
+/* Hover for btn */
+.btn-cta:hover {
+  background: #002e6c;
+  text-decoration: none;
+  color: #fff;
+}
+.btn-cta:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #ff889c;
+  animation: btn-cta 7s ease-in-out infinite;
+}
+.btn-cta:hover {
+  background: #002e6c;
+}
+.btn-cta:active {
+  top: 2px;
+}
+@keyframes btn-cta {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  70% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+/* CALL TO ACTION END */
+
+/* FOOTER SECTION */
+.footer {
+  position: abosolute;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  background: black;
+}
+.footer_container {
+  display: flex;
+  padding: 100px 100px;
+  width: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 550px;
+  margin-top: 100px;
+}
+.sec {
+  margin-right: 30px;
+}
+.aboutus {
+  width: 40%;
+}
+.aboutus h2 {
+  position: relative;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.aboutus h2:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background: #d00d2d;
+}
+.aboutus p {
+  margin-top: 40px;
+  color: #999;
+}
+.aboutus p:hover {
+  color: white;
+}
+.quicklinks h2 {
+  position: relative;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.quicklinks h2:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background: #d00d2d;
+}
+.quicklinks {
+  position: relative;
+  width: 15%;
+}
+.quicklinks ul {
+  margin-top: 40px;
+}
+.quicklinks ul li {
+  margin-bottom: 20px;
+}
+.quicklinks ul li a {
+  color: #999;
+}
+.quicklinks ul li a:hover {
+  color: white;
+}
+.contact h2 {
+  position: relative;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.contact h2:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background: #d00d2d;
+}
+.contact {
+  position: relative;
+  width: 25%;
+}
+.contact ul {
+  margin-top: 40px;
+}
+.contact ul li {
+  margin-bottom: 20px;
+}
+.contact ul li {
+  color: #999;
+}
+.contact ul li:hover {
+  color: white;
+}
+.footer_logo_img {
+  width: 250px;
+  margin-top: 20px;
+  margin-left: -25px;
+}
+/* FOOTER SECTION END */
